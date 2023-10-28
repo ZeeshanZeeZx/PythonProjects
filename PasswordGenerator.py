@@ -18,10 +18,23 @@ def generate_strong_password(n:int, num_true:int, special_char:str):
 
 
 if __name__ =="__main__":
-    for i in range(10):
-        # print(generate_strong_password(8, True, True))
-        print(generate_strong_password(5, True, False))
-        # print(generate_strong_password(5, False, True))
-        # generate_strong_password(8, True, True)
-        # password should also contain one or more numbers
-        # password should also contain one or more of these special characters: "!?=+-()#"
+    while True:
+        length = int(input("Enter how long you want your Password: "))
+        num = input("Enter Y or y if you want number in your Password else N: ").lower() 
+        special = input("Enter Y or y if you want some Special Character else N: ").lower()
+        if num == 'y' and special == "y":
+            num = special = True
+        elif num == "y" and special != 'y':
+            num = True
+            special = False
+        elif num != 'y' and special == "y":
+            num = False
+            special = True
+        else:
+            num = False
+            special = False
+        print(generate_strong_password(length, num, special))
+        quit = input("Enter q to Exit or any other key to continue: ")
+        if quit:
+            break
+        
