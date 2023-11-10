@@ -19,3 +19,5 @@ while inp != 3:
     command(inp, p_dict)
     inp = int(input("command (1 search, 2 add, 3 quit): "))
 print("quitting...")
+
+# ℤ𝕏
