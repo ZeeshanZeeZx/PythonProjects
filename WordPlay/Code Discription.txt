@@ -1,0 +1,29 @@
+The code provides functions to manipulate strings in different ways. Here's a breakdown of the code:
+
+1. change_case(orig_string) Function:
+- Purpose: Converts the case of each character in the input string.
+- Logic:
+    - For each character in the original string (orig_string), it checks if the character is a lowercase letter. If yes, it converts it to uppercase, and vice versa. Non-alphabetic characters remain unchanged.
+- Return Value: The modified string.
+
+2. split_in_half(orig_string) Function:
+- Purpose: Splits the input string into two halves and returns them as a tuple.
+- Logic:
+    - Calculates the length of the input string and determines the midpoint.
+    - Returns a tuple containing the first half and the second half of the original string.
+- Return Value: Tuple of two strings (first half, second half).
+
+3. remove_special_characters(orig_string) Function:
+- Purpose: Removes special characters from the input string, allowing only letters (both uppercase and lowercase), numbers, and spaces.
+- Logic:
+    - For each character in the original string, it checks if the character is alphanumeric or a space. If yes, it includes it in the modified string.
+- Return Value: The modified string.
+
+4. Main Block (if __name__ == "__main__":):
+- Accepts user input for a sentence (my_string) that needs to be manipulated.
+- Calls the change_case function and prints the result.
+- Asks the user whether to split the sentence and remove special characters.
+    - If the user enters 'Y' or 'y', it calls the split_in_half and remove_special_characters functions, printing the results.
+
+Output:
+The program displays the original string, the string with reversed cases, and, if requested, the two halves of the string and the string without special characters.
