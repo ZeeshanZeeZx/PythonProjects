@@ -1,0 +1,41 @@
+This Python script simulates a simple assembly-like language with basic instructions (MOV, PRINT, ADD, SUB, MUL, DIV, and END) and a set of registers (in the form of a dictionary). Here's a breakdown of the code:
+
+1. Function run(my_lst: list):
+    - Purpose: Executes a series of instructions represented by a list (my_lst).
+    - Parameters:
+        - my_lst: A list containing strings, each representing an instruction.
+    - Return Value: A list containing the results of the PRINT instructions encountered during execution.
+
+2. Inside the run function:
+    - A dictionary named dict is initialized to simulate registers.
+    - A list named lst is initialized to store the results of PRINT instructions.
+    - The function iterates over each instruction in my_lst.
+        - If the instruction is a MOV, it updates the register value.
+        - If the instruction is a PRINT, it appends the value of the specified register to the result list.
+        - If the instruction is an arithmetic operation (ADD, SUB, MUL, DIV), it performs the operation and updates the register.
+        - If the instruction is END, the function returns the result list.
+
+3. Main Block (if __name__ == "__main__":):
+    - A dictionary named dict is initialized to store register values.
+    - A list named program1 is created, representing a series of instructions.
+    - The run function is called with program1, and the result is printed.
+
+4. Example Program (program1):
+    - MOV A 1
+    - MOV B 2
+    - PRINT A
+    - PRINT B
+    - ADD A B
+    - PRINT A
+    - MUL A B
+    - PRINT A
+    - DIV A 1
+    - PRINT A
+    - SUB A 1
+    - PRINT A
+    - END
+
+5. Output:
+    - The program output is the list of results corresponding to the PRINT instructions encountered during the execution of the program.
+
+This script serves as a simple interpreter for a basic assembly-like language, demonstrating register manipulation and arithmetic operations.
