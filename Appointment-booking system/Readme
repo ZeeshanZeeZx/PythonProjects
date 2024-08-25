@@ -1,0 +1,13 @@
+A project on an Appointment Booking System using Python! 
+
+Project Highlights:
+GUI Development: Designed an intuitive user interface with Tkinter.
+Database Management: Implemented SQLite3 for storing and managing appointment data.
+Functionality: Users can book, view, and cancel appointments seamlessly.
+
+Features:
+User authentication
+Dynamic scheduling
+Automated notifications
+
+This project enhanced my skills in Python programming, GUI development, and database integration. I'm eager to leverage these skills in future endeavors.
